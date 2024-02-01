@@ -1,5 +1,5 @@
-
 package com.wecp.progressive.entity;
+
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,9 +8,9 @@ import javax.persistence.Id;
 
 @Entity
 public class Customers implements Comparable<Customers> {
-@Id
-@GeneratedValue(strategy=GenerationType.IDENTITY)
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int customerId;
     private String name;
     private String email;
@@ -79,10 +79,8 @@ public class Customers implements Comparable<Customers> {
     }
 
     @Override
-    public int compareTo(Customers customer) {
-        return this.getName().compareTo(customer.getName());
-       
+    public int compareTo(Customers otherCustomers) {
+        // Implement comparison logic based on customer name
+        return this.getName().compareTo(otherCustomers.getName());
     }
-    
 }
- 

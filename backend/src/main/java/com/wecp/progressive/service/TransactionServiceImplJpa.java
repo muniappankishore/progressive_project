@@ -1,5 +1,6 @@
 package com.wecp.progressive.service;
 
+import com.wecp.progressive.entity.Accounts;
 import com.wecp.progressive.entity.Transactions;
 import com.wecp.progressive.repository.AccountRepository;
 import com.wecp.progressive.repository.TransactionRepository;
@@ -49,4 +50,3 @@ public class TransactionServiceImplJpa implements TransactionService {
         return null;
     }
 }
-
