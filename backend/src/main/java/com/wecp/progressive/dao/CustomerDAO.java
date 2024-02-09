@@ -5,7 +5,7 @@ import com.wecp.progressive.dto.CustomerAccountInfo;
 import com.wecp.progressive.entity.Customers;
 
 import java.sql.SQLException;
-import java.util.List;
+import java.util.List; //day 12
 
 public interface CustomerDAO {
     int addCustomer(Customers customers) throws SQLException;
